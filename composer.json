@@ -1,0 +1,20 @@
+{
+  "name": "suzuki/its-travel-pack",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Norio Suzuki",
+      "email": "norio.suzuki@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Its\\": "src/"
+    }
+  },
+  "require": {
+    "istom1n/fpdi-tfpdf": "^1.0",
+    "symfony/yaml": "^3.0",
+    "guzzlehttp/guzzle": "^6.2"
+  }
+}

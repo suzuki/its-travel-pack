@@ -1,4 +1,13 @@
 composer.phar
+/config/data.yml
+/fonts/unifont/mplus-TESTFLIGHT-059/
+/fonts/unifont/*.dat
+/fonts/unifont/*.ttf
+/fonts/unifont/*.txt
+/fonts/unifont/*.php
+/fonts/unifont/*.zip
+/pdf/export/*.pdf
+/pdf/import/*.pdf
 /vendor/
 
 # Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file

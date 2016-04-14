@@ -1,0 +1,523 @@
+embed_settings:
+  applicatioon_date:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 20
+        y: 33
+      -
+        x: 28
+        y: 33
+      -
+        x: 35
+        y: 33
+    value: 28-4-21
+
+  representative_name_kana:
+    type: text
+    x: 74
+    y: 38
+    value: スズキ イチロウ
+
+  representative_name:
+    type: text
+    x: 74
+    y: 44
+    value: 鈴木 一郎
+
+  company:
+    type: text
+    x: 74
+    y: 52
+    value: 株式会社サンプル
+
+  insurance_number:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 172
+        y: 52
+      -
+        x: 187
+        y: 52
+    value: 1111-1111
+
+  gender:
+    type: select
+    list:
+      male:
+        x: 176
+        y: 42
+        width: 8
+        height: 4
+      female:
+        x: 188
+        y: 42
+        width: 8
+        height: 4
+    value: male
+
+  phone_1:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 74
+        y: 60
+      -
+        x: 98
+        y: 60
+      -
+        x: 122
+        y: 60
+    value: 03-1111-2222
+
+  phone_type_1:
+    type: select
+    list:
+      mobile:
+        x: 155
+        y: 58
+        width: 8
+        height: 4
+      home:
+        x: 163
+        y: 58
+        width: 8
+        height: 4
+      company:
+        x: 172
+        y: 58
+        width: 9
+        height: 4
+    value: mobile
+
+# TODO:
+#   phone_2:
+#   phone_type_2:
+
+  address_type_1:
+    type: select
+    list:
+      home:
+        x: 50
+        y: 79
+        width: 10
+        height: 4
+      company:
+        x: 60
+        y: 79
+        width: 10
+        height: 4
+    value: home
+
+  address_1:
+    type: text
+    x: 76
+    y: 81
+    value: 111-1111 北海道札幌市札幌1-11-11 札幌ハウス101
+
+  address_type_2:
+    type: select
+    list:
+      home:
+        x: 50
+        y: 86
+        width: 10
+        height: 4
+      company:
+        x: 60
+        y: 86
+        width: 10
+        height: 4
+    value: home
+
+  address_2:
+    type: text
+    x: 76
+    y: 88
+    value: 111-1111 北海道札幌市札幌1-11-11 札幌ハウス101
+
+  tour_date_from:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 28
+        y: 100
+      -
+        x: 44
+        y: 100
+      -
+        x: 58
+        y: 100
+      -
+        x: 71
+        y: 100
+    value: 2016-4-21-木
+
+  tour_date_to:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 84
+        y: 100
+      -
+        x: 98
+        y: 100
+      -
+        x: 110
+        y: 100
+      -
+        x: 124
+        y: 100
+    value: 2016-4-22-金
+
+  tour_code:
+    type: text
+    x: 155
+    y: 100
+    value: ツアーコード
+
+  tour_name:
+    type: text
+    x: 28
+    y: 107
+    value: ツアー名称
+
+  tour_pamphlet:
+    type: text
+    x: 155
+    y: 107
+    value: パンフレット名称
+
+  hotel_date_1:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 28
+        y: 114
+      -
+        x: 36
+        y: 114
+      -
+        x: 50
+        y: 114
+    value: 4-21-1
+
+  hotel_name_1:
+    type: text
+    x: 28
+    y: 119
+    value: ホテル名称
+
+  hotel_meal_1:
+    type: select
+    list:
+      breakfast:
+        x: 28
+        y: 123
+        width: 10
+        height: 4
+      breakfast_dinner:
+        x: 38
+        y: 123
+        width: 10
+        height: 4
+      no_meal:
+        x: 52
+        y: 123
+        width: 10
+        height: 4
+    value: no_meal
+
+  hotel_smoking_1:
+    type: select
+    list:
+      smoking:
+        x: 67
+        y: 123
+        width: 8
+        height: 4
+      non_smoking:
+        x: 75
+        y: 123
+        width: 8
+        height: 4
+    value: non_smoking
+
+# TODO
+#   hotel_date_2:
+#   hotel_name_2:
+#   hotel_meal_2:
+#   hotel_smoking_2:
+#
+#   hotel_date_3:
+#   hotel_name_3:
+#   hotel_meal_3:
+#   hotel_smoking_3:
+
+  attend_adult:
+    type: text
+    x: 40
+    y: 137
+    value: 2
+
+  attend_child:
+    type: text
+    x: 40
+    y: 142
+    value: 0
+
+  attend_baby:
+    type: text
+    x: 40
+    y: 147
+    value: 0
+
+  room_assignment_1:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 92
+        y: 132
+      -
+        x: 112
+        y: 132
+    value: 2-1
+
+# TODO
+#   room_assignment_2:
+#   room_assignment_3:
+
+  charge_adult_1:
+    type: text
+    x: 96
+    y: 137
+    value: '30,000'
+
+  charge_child_1:
+    type: text
+    x: 96
+    y: 142
+    value: '0'
+
+  charge_baby_1:
+    type: text
+    x: 96
+    y: 147
+    value: '0'
+
+# TODO
+#  charge_adult_2:
+#  charge_child_2:
+#  charge_baby_2:
+#
+#  charge_adult_3:
+#  charge_child_3:
+#  charge_baby_3:
+
+  transport_out_date:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 20
+        y: 165
+      -
+        x: 26
+        y: 165
+    value: 4-21
+
+  transport_out_path_1:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 40
+        y: 158
+      -
+        x: 66
+        y: 158
+    value: 羽田-新千歳
+
+  transport_out_name_1:
+    type: text
+    x: 120
+    y: 156
+    value: JAL000
+
+  transport_out_time_1:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 134
+        y: 159
+      -
+        x: 144
+        y: 159
+    value: 10-00
+
+  transport_out_class_1:
+    type: text
+    x: 176
+    y: 158
+    value: なし
+
+# TODO
+#  transport_out_path_2:
+#  transport_out_name_2:
+#  transport_out_time_2:
+#  transport_out_class_2:
+
+  transport_return_date:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 20
+        y: 180
+      -
+        x: 26
+        y: 180
+    value: 4-22
+
+  transport_return_path_1:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 40
+        y: 173
+      -
+        x: 66
+        y: 173
+    value: 新千歳-羽田
+
+  transport_return_name_1:
+    type: text
+    x: 120
+    y: 171
+    value: JAL999
+
+  transport_return_time_1:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 134
+        y: 174
+      -
+        x: 144
+        y: 174
+    value: 19-30
+
+  transport_return_class_1:
+    type: text
+    x: 176
+    y: 173
+    value: なし
+
+# TODO
+#  transport_return_path_2:
+#  transport_return_name_2:
+#  transport_return_time_2:
+#  transport_return_class_2:
+
+  transport_note_1:
+    type: text
+    x: 16
+    y: 190
+    value: 特になし
+
+  transport_note_2:
+    type: text
+    x: 16
+    y: 194
+    value: ''
+
+  transport_note_3:
+    type: text
+    x: 16
+    y: 198
+    value: ''
+
+  transport_note_4:
+    type: text
+    x: 16
+    y: 202
+    value: ''
+
+  user_name_1:
+    type: text
+    x: 20
+    y: 220
+    value: スズキ イチロウ
+
+  user_gender_1:
+    type: select
+    list:
+      male:
+        x: 82
+        y: 218
+        width: 4
+        height: 4
+      female:
+        x: 86
+        y: 218
+        width: 4
+        height: 4
+    value: male
+
+  user_age_1:
+    type: text
+    x: 93
+    y: 220
+    value: 35
+
+  user_alphabet_1:
+    type: text
+    x: 103
+    y: 220
+    value: ''
+
+  user_birthday_1:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 175
+        y: 220
+      -
+        x: 187
+        y: 220
+      -
+        x: 193
+        y: 220
+    value: ''
+
+  fund_join:
+    type: select
+    list:
+      yes:
+        x: 54
+        y: 270
+        width: 18
+        height: 6
+      no:
+        x: 78
+        y: 270
+        width: 18
+        height: 6
+    value: no
+
+  fund_use:
+    type: select
+    list:
+      yes:
+        x: 107
+        y: 270
+        width: 18
+        height: 6
+      no:
+        x: 133
+        y: 270
+        width: 18
+        height: 6
+    value: no
+
+export_filename: travelpack_reserve.pdf
+pdf_url: http://www.jc-tourist.co.jp/travel/itspack/skycontents/2013info/201106_tehaisho.pdf
+pdf_filename: 201106_tehaisho.pdf
