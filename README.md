@@ -8,6 +8,12 @@
 $ git clone git@github.com:suzuki/its-travel-pack.git
 ```
 
+#### composer
+
+```
+$ composer install
+```
+
 #### get font
 
 ```
