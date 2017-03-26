@@ -1,4 +1,6 @@
 embed_settings:
+#----------------------------------------------------------------------------------
+# 送信日
   applicatioon_date:
     type: text_separated_hyphen
     positions:
@@ -11,37 +13,21 @@ embed_settings:
       -
         x: 35
         y: 33
-    value: 28-4-21
-
-  representative_name_kana:
-    type: text
-    x: 74
-    y: 38
-    value: スズキ イチロウ
-
+    value: 28-4-21 #FAX送信日
+#----------------------------------------------------------------------------------
+# 利用代表者情報(必須)
   representative_name:
     type: text
     x: 74
     y: 44
-    value: 鈴木 一郎
-
-  company:
+    value: 鈴木 一郎 #利用代表者 名前
+    
+  representative_name_kana:
     type: text
     x: 74
-    y: 52
-    value: 株式会社サンプル
-
-  insurance_number:
-    type: text_separated_hyphen
-    positions:
-      -
-        x: 172
-        y: 52
-      -
-        x: 187
-        y: 52
-    value: 1111-1111
-
+    y: 38
+    value: スズキ イチロウ #利用代表者 フリガナ
+    
   gender:
     type: select
     list:
@@ -55,7 +41,24 @@ embed_settings:
         y: 42
         width: 8
         height: 4
-    value: male
+    value: male #利用代表者 性別
+    
+  company:
+    type: text
+    x: 74
+    y: 52
+    value: 株式会社サンプル #勤務先(事業所名)
+
+  insurance_number:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 172
+        y: 52
+      -
+        x: 187
+        y: 52
+    value: 1111-1111 #利用代表者の方の保険証 記号-番号
 
   phone_1:
     type: text_separated_hyphen
@@ -69,7 +72,7 @@ embed_settings:
       -
         x: 122
         y: 60
-    value: 03-1111-2222
+    value: 03-1111-2222 #連絡先電話番号(優先1)
 
   phone_type_1:
     type: select
@@ -77,7 +80,7 @@ embed_settings:
       mobile:
         x: 155
         y: 58
-        width: 8
+        width: 6
         height: 4
       home:
         x: 163
@@ -89,32 +92,69 @@ embed_settings:
         y: 58
         width: 9
         height: 4
-    value: mobile
+    value: mobile #連絡先電話番号(優先1)の種別
 
-# TODO:
-#   phone_2:
-#   phone_type_2:
+  phone_2:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 74
+        y: 67
+      -
+        x: 98
+        y: 67
+      -
+        x: 122
+        y: 67
+    value: #連絡先電話番号(優先2)
 
+  phone_type_2:
+    type: select
+    list:
+      none:
+        x:
+        y:
+        width:
+        height:
+      mobile:
+        x: 155
+        y: 65
+        width: 6
+        height: 4
+      home:
+        x: 163
+        y: 65
+        width: 8
+        height: 4
+      company:
+        x: 172
+        y: 65
+        width: 9
+        height: 4
+    value: none #連絡先電話番号(優先2)の種別
+
+#----------------------------------------------------------------------------------
+# 請求書、旅行書類の送付先
   address_type_1:
     type: select
     list:
       home:
         x: 50
         y: 79
-        width: 10
+        width: 8
         height: 4
       company:
         x: 60
         y: 79
         width: 10
         height: 4
-    value: home
+    value: home #請求書送付先住所の種別
 
   address_1:
     type: text
     x: 76
     y: 81
-    value: 111-1111 北海道札幌市札幌1-11-11 札幌ハウス101
+    value: 111-1111 北海道札幌市札幌1-11-11 札幌ハウス101 #請求書送付先住所
 
   address_type_2:
     type: select
@@ -122,21 +162,23 @@ embed_settings:
       home:
         x: 50
         y: 86
-        width: 10
+        width: 8
         height: 4
       company:
         x: 60
         y: 86
         width: 10
         height: 4
-    value: home
+    value: company #旅行書類等送付先住所の種別
 
   address_2:
     type: text
     x: 76
     y: 88
-    value: 111-1111 北海道札幌市札幌1-11-11 札幌ハウス101
+    value: 111-1111 北海道札幌市札幌1-11-11 札幌ハウス101 #請求書送付先住所
 
+#----------------------------------------------------------------------------------
+# 旅行希望コース
   tour_date_from:
     type: text_separated_hyphen
     positions:
@@ -152,7 +194,7 @@ embed_settings:
       -
         x: 71
         y: 100
-    value: 2016-4-21-木
+    value: 2016-4-21-木 #旅行期間 初日
 
   tour_date_to:
     type: text_separated_hyphen
@@ -169,26 +211,28 @@ embed_settings:
       -
         x: 124
         y: 100
-    value: 2016-4-22-金
+    value: 2016-4-22-金 #旅行期間 最終日
 
   tour_code:
     type: text
     x: 155
     y: 100
-    value: ツアーコード
+    value: 123-456 #ツアーコード
 
   tour_name:
     type: text
     x: 28
     y: 107
-    value: ツアー名称
+    value: サンプルツアー #ツアー名称
 
   tour_pamphlet:
     type: text
     x: 155
     y: 107
-    value: パンフレット名称
-
+    value: サンプルパンフレット 38P #パンフレット名/頁
+    
+#----------------------------------------
+#1日目ホテル(必須)
   hotel_date_1:
     type: text_separated_hyphen
     positions:
@@ -201,13 +245,13 @@ embed_settings:
       -
         x: 50
         y: 114
-    value: 4-21-1
+    value: 4-21-1 #1日目ホテル m-d-泊
 
   hotel_name_1:
     type: text
     x: 28
     y: 119
-    value: ホテル名称
+    value: サンプル1ホテル #1日目ホテル名称
 
   hotel_meal_1:
     type: select
@@ -215,7 +259,7 @@ embed_settings:
       breakfast:
         x: 28
         y: 123
-        width: 10
+        width: 8
         height: 4
       breakfast_dinner:
         x: 38
@@ -227,52 +271,181 @@ embed_settings:
         y: 123
         width: 10
         height: 4
-    value: no_meal
+    value: breakfast #1日目ホテル 条件等 食事
 
   hotel_smoking_1:
     type: select
     list:
       smoking:
-        x: 67
+        x: 77
         y: 123
-        width: 8
+        width: 6
         height: 4
       non_smoking:
-        x: 75
+        x: 68
+        y: 123
+        width: 6
+        height: 4
+    value: non_smoking #1日目ホテル 条件等 喫煙可否
+    
+#----------------------------------------
+#2日目ホテル(オプション)
+  hotel_date_2:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 86
+        y: 114
+      -
+        x: 94
+        y: 114
+      -
+        x: 108
+        y: 114
+    value: #2日目ホテル m-d-泊
+
+  hotel_name_2:
+    type: text
+    x: 86
+    y: 119
+    value: #2日目ホテル名称
+
+  hotel_meal_2:
+    type: select
+    list:
+      none:
+        x:
+        y:
+        width:
+        height:
+      breakfast:
+        x: 87
         y: 123
         width: 8
         height: 4
-    value: non_smoking
+      breakfast_dinner:
+        x: 97
+        y: 123
+        width: 10
+        height: 4
+      no_meal:
+        x: 111
+        y: 123
+        width: 10
+        height: 4
+    value: none #2日目ホテル 条件等 食事
 
-# TODO
-#   hotel_date_2:
-#   hotel_name_2:
-#   hotel_meal_2:
-#   hotel_smoking_2:
-#
-#   hotel_date_3:
-#   hotel_name_3:
-#   hotel_meal_3:
-#   hotel_smoking_3:
+  hotel_smoking_2:
+    type: select
+    list:
+      none:
+        x:
+        y:
+        width:
+        height:
+      smoking:
+        x: 136
+        y: 123
+        width: 6
+        height: 4
+      non_smoking:
+        x: 127
+        y: 123
+        width: 6
+        height: 4
+    value: none #2日目ホテル 条件等 喫煙可否
+    
+#----------------------------------------
+#3日目ホテル(オプション)
+  hotel_date_3:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 145
+        y: 114
+      -
+        x: 152
+        y: 114
+      -
+        x: 166
+        y: 114
+    value: #3日目ホテル m-d-泊
 
+  hotel_name_3:
+    type: text
+    x: 145
+    y: 119
+    value: #3日目ホテル名称
+
+  hotel_meal_3:
+    type: select
+    list:
+      none:
+        x:
+        y:
+        width:
+        height:
+      breakfast:
+        x: 145
+        y: 123
+        width: 8
+        height: 4
+      breakfast_dinner:
+        x: 156
+        y: 123
+        width: 10
+        height: 4
+      no_meal:
+        x: 169
+        y: 123
+        width: 10
+        height: 4
+    value: none #3日目ホテル 条件等 食事
+
+  hotel_smoking_3:
+    type: select
+    list:
+      none:
+        x:
+        y:
+        width:
+        height:
+      smoking:
+        x: 194
+        y: 123
+        width: 6
+        height: 4
+      non_smoking:
+        x: 185
+        y: 123
+        width: 6
+        height: 4
+    value: none #3日目ホテル 条件等 喫煙可否
+
+#----------------------------------------
+#参加人数、ホテル部屋割り等
+#----------------------------------------
+#参加人数
   attend_adult:
     type: text
     x: 40
     y: 137
-    value: 2
+    value: 3 #参加人数 大人
 
   attend_child:
     type: text
     x: 40
     y: 142
-    value: 0
+    value: 2 #参加人数 小人
 
   attend_baby:
     type: text
     x: 40
     y: 147
-    value: 0
+    value: 1 #参加人数 幼児
 
+#----------------------------------------
+#ホテル部屋割り 1部屋目(必須)
   room_assignment_1:
     type: text_separated_hyphen
     positions:
@@ -282,39 +455,92 @@ embed_settings:
       -
         x: 112
         y: 132
-    value: 2-1
-
-# TODO
-#   room_assignment_2:
-#   room_assignment_3:
-
+    value: 2-1 #ホテル部屋割り 1部屋目 人数-室数
+    
   charge_adult_1:
     type: text
     x: 96
     y: 137
-    value: '30,000'
+    value: '30,000' #ホテル部屋割り 1部屋目  大人 旅行代金
 
   charge_child_1:
     type: text
     x: 96
     y: 142
-    value: '0'
+    value: '20,000' #ホテル部屋割り 1部屋目  小人 旅行代金
 
   charge_baby_1:
     type: text
     x: 96
     y: 147
-    value: '0'
+    value: '10,000' #ホテル部屋割り 1部屋目  幼児 旅行代金
+    
+#----------------------------------------
+#ホテル部屋割り 2部屋目(オプション)
+  room_assignment_2:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 132
+        y: 132
+      -
+        x: 152
+        y: 132
+    value: #ホテル部屋割り 2部屋目 人数-室数
+        
+  charge_adult_2:
+    type: text
+    x: 136
+    y: 137
+    value: #ホテル部屋割り 2部屋目  大人 旅行代金
 
-# TODO
-#  charge_adult_2:
-#  charge_child_2:
-#  charge_baby_2:
-#
-#  charge_adult_3:
-#  charge_child_3:
-#  charge_baby_3:
+  charge_child_2:
+    type: text
+    x: 136
+    y: 142
+    value: #ホテル部屋割り 2部屋目  小人 旅行代金
 
+  charge_baby_2:
+    type: text
+    x: 136
+    y: 147
+    value: #ホテル部屋割り 2部屋目  幼児 旅行代金
+        
+#----------------------------------------
+#ホテル部屋割り 3部屋目(オプション)
+  room_assignment_3:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 172
+        y: 132
+      -
+        x: 192
+        y: 132
+    value: #ホテル部屋割り 3部屋目 人数-室数
+        
+  charge_adult_3:
+    type: text
+    x: 176
+    y: 137
+    value: #ホテル部屋割り 3部屋目  大人 旅行代金
+
+  charge_child_3:
+    type: text
+    x: 176
+    y: 142
+    value: #ホテル部屋割り 3部屋目  小人 旅行代金
+
+  charge_baby_3:
+    type: text
+    x: 176
+    y: 147
+    value: #ホテル部屋割り 3部屋目  幼児 旅行代金
+    
+#----------------------------------------------------------------------------------
+# 利用希望内容
+#----------------------------------------
+#交通手段 往路(必須)
   transport_out_date:
     type: text_separated_hyphen
     positions:
@@ -324,7 +550,7 @@ embed_settings:
       -
         x: 26
         y: 165
-    value: 4-21
+    value: 4-21 #交通手段 往路 m-d
 
   transport_out_path_1:
     type: text_separated_hyphen
@@ -335,13 +561,13 @@ embed_settings:
       -
         x: 66
         y: 158
-    value: 羽田-新千歳
+    value: 羽田-新千歳 #交通手段 往路 発-着
 
   transport_out_name_1:
     type: text
     x: 120
     y: 156
-    value: JAL000
+    value: JAL000 #交通手段 往路 便名又は列車名
 
   transport_out_time_1:
     type: text_separated_hyphen
@@ -352,20 +578,53 @@ embed_settings:
       -
         x: 144
         y: 159
-    value: 10-00
+    value: 10-00 #交通手段 往路 出発時刻 h-s
 
   transport_out_class_1:
     type: text
     x: 176
     y: 158
-    value: なし
+    value: なし #交通手段 往路 希望クラス(等級)
 
-# TODO
-#  transport_out_path_2:
-#  transport_out_name_2:
-#  transport_out_time_2:
-#  transport_out_class_2:
+#----------------------------------------
+#交通手段 往路 乗り継ぎ後(オプション)
 
+  transport_out_path_2:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 40
+        y: 165
+      -
+        x: 66
+        y: 165
+    value: #交通手段 往路 乗り継ぎ後 発-着
+
+  transport_out_name_2:
+    type: text
+    x: 120
+    y: 163
+    value: #交通手段 往路 乗り継ぎ後 便名又は列車名
+
+  transport_out_time_2:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 134
+        y: 167
+      -
+        x: 144
+        y: 167
+    value: #交通手段 往路 乗り継ぎ後 出発時刻 h-s
+
+  transport_out_class_3:
+    type: text
+    x: 176
+    y: 165
+    value: #交通手段 往路 乗り継ぎ後 希望クラス(等級)
+
+#----------------------------------------
+#交通手段 復路(必須)
   transport_return_date:
     type: text_separated_hyphen
     positions:
@@ -375,7 +634,7 @@ embed_settings:
       -
         x: 26
         y: 180
-    value: 4-22
+    value: 4-22 #交通手段 復路 m-d
 
   transport_return_path_1:
     type: text_separated_hyphen
@@ -386,13 +645,13 @@ embed_settings:
       -
         x: 66
         y: 173
-    value: 新千歳-羽田
+    value: 新千歳-羽田 #交通手段 複路 発-着
 
   transport_return_name_1:
     type: text
     x: 120
     y: 171
-    value: JAL999
+    value: JAL999 #交通手段 往路 便名又は列車名
 
   transport_return_time_1:
     type: text_separated_hyphen
@@ -403,120 +662,394 @@ embed_settings:
       -
         x: 144
         y: 174
-    value: 19-30
+    value: 19-30 #交通手段 複路 出発時刻 h-s
 
   transport_return_class_1:
     type: text
     x: 176
     y: 173
-    value: なし
+    value: なし #交通手段 複路  希望クラス(等級)
 
-# TODO
-#  transport_return_path_2:
-#  transport_return_name_2:
-#  transport_return_time_2:
-#  transport_return_class_2:
+#----------------------------------------
+#交通手段 複路 乗り継ぎ後(オプション)
 
+  transport_return_path_2:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 40
+        y: 180
+      -
+        x: 66
+        y: 180
+    value: #交通手段 複路 乗り継ぎ後 発-着
+
+  transport_return_name_2:
+    type: text
+    x: 120
+    y: 178
+    value: #交通手段 複路 乗り継ぎ後 便名又は列車名
+
+  transport_return_time_2:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 134
+        y: 182
+      -
+        x: 144
+        y: 182
+    value: #交通手段 複路 乗り継ぎ後 出発時刻 h-s
+
+  transport_return_class_3:
+    type: text
+    x: 176
+    y: 180
+    value: #交通手段 複路 乗り継ぎ後 希望クラス(等級)
+
+#----------------------------------------------------------------------------------
+# その他 特記事項
   transport_note_1:
     type: text
     x: 16
     y: 190
-    value: 特になし
+    value: 特になし #特記事項1行目
 
   transport_note_2:
     type: text
     x: 16
     y: 194
-    value: ''
+    value: #特記事項2行目
 
   transport_note_3:
     type: text
     x: 16
     y: 198
-    value: ''
+    value: #特記事項3行目
 
   transport_note_4:
     type: text
     x: 16
     y: 202
-    value: ''
+    value: #特記事項4行目
 
+#----------------------------------------------------------------------------------
+# 利用者氏名
+#----------------------------------------
+#代表者(必須)
   user_name_1:
     type: text
     x: 20
-    y: 220
-    value: スズキ イチロウ
+    y: 229
+    value: スズキ イチロウ #代表者氏名(カタカナ)
 
   user_gender_1:
     type: select
     list:
       male:
         x: 82
-        y: 218
+        y: 225
         width: 4
         height: 4
       female:
         x: 86
-        y: 218
+        y: 225
         width: 4
         height: 4
-    value: male
+    value: male #代表者 性別
 
   user_age_1:
     type: text
     x: 93
-    y: 220
-    value: 35
+    y: 229
+    value: 35 #代表者 年齢
 
   user_alphabet_1:
     type: text
     x: 103
-    y: 220
-    value: ''
+    y: 229
+    value: #代表者 パスポート記載のローマ字(姓名) ※海外旅行のみ
 
   user_birthday_1:
     type: text_separated_hyphen
     positions:
       -
         x: 175
-        y: 220
+        y: 228
       -
         x: 187
-        y: 220
+        y: 228
       -
         x: 193
-        y: 220
-    value: ''
+        y: 228
+    value: #代表者 生年月日(y-m-d) ※海外旅行のみ
 
-  fund_join:
+#----------------------------------------
+#同行者1(オプション)
+  user_name_2:
+    type: text
+    x: 20
+    y: 236
+    value: #同行者1 氏名(カタカナ)
+
+  user_gender_2:
     type: select
     list:
-      yes:
-        x: 54
-        y: 270
-        width: 18
-        height: 6
-      no:
-        x: 78
-        y: 270
-        width: 18
-        height: 6
-    value: no
+      none:
+        x:
+        y:
+        width:
+        height:
+      male:
+        x: 82
+        y: 234
+        width: 4
+        height: 4
+      female:
+        x: 86
+        y: 234
+        width: 4
+        height: 4
+    value: none #同行者1 性別
 
-  fund_use:
+  user_age_2:
+    type: text
+    x: 93
+    y: 236
+    value: #同行者1 年齢
+
+  user_alphabet_2:
+    type: text
+    x: 103
+    y: 236
+    value: #同行者1 パスポート記載のローマ字(姓名) ※海外旅行のみ
+
+  user_birthday_2:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 175
+        y: 236
+      -
+        x: 187
+        y: 236
+      -
+        x: 193
+        y: 236
+    value: #同行者1 生年月日(y-m-d) ※海外旅行のみ
+#----------------------------------------
+#同行者2(オプション)
+  user_name_3:
+    type: text
+    x: 20
+    y: 242
+    value: #同行者2 氏名(カタカナ)
+
+  user_gender_3:
     type: select
     list:
-      yes:
-        x: 107
-        y: 270
-        width: 18
-        height: 6
-      no:
-        x: 133
-        y: 270
-        width: 18
-        height: 6
-    value: no
+      none:
+        x:
+        y:
+        width:
+        height:
+      male:
+        x: 82
+        y: 240
+        width: 4
+        height: 4
+      female:
+        x: 86
+        y: 240
+        width: 4
+        height: 4
+    value: none #同行者2 性別
+
+  user_age_3:
+    type: text
+    x: 93
+    y: 242
+    value: #同行者2 年齢
+
+  user_alphabet_3:
+    type: text
+    x: 103
+    y: 242
+    value: #同行者2 パスポート記載のローマ字(姓名) ※海外旅行のみ
+
+  user_birthday_3:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 175
+        y: 242
+      -
+        x: 187
+        y: 242
+      -
+        x: 193
+        y: 242
+    value: #同行者2 生年月日(y-m-d) ※海外旅行のみ
+#----------------------------------------
+#同行者3(オプション)
+  user_name_4:
+    type: text
+    x: 20
+    y: 248
+    value: #同行者3 氏名(カタカナ)
+
+  user_gender_4:
+    type: select
+    list:
+      none:
+        x:
+        y:
+        width:
+        height:
+      male:
+        x: 82
+        y: 247
+        width: 4
+        height: 4
+      female:
+        x: 86
+        y: 247
+        width: 4
+        height: 4
+    value: none #同行者3 性別
+
+  user_age_4:
+    type: text
+    x: 93
+    y: 248
+    value: #同行者3 年齢
+
+  user_alphabet_4:
+    type: text
+    x: 103
+    y: 248
+    value: #同行者3 パスポート記載のローマ字(姓名) ※海外旅行のみ
+
+  user_birthday_4:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 175
+        y: 248
+      -
+        x: 187
+        y: 248
+      -
+        x: 193
+        y: 248
+    value: #同行者3 生年月日(y-m-d) ※海外旅行のみ
+#----------------------------------------
+#同行者4(オプション)
+  user_name_5:
+    type: text
+    x: 20
+    y: 255
+    value: #同行者4 氏名(カタカナ)
+
+  user_gender_5:
+    type: select
+    list:
+      none:
+        x:
+        y:
+        width:
+        height:
+      male:
+        x: 82
+        y: 253
+        width: 4
+        height: 4
+      female:
+        x: 86
+        y: 253
+        width: 4
+        height: 4
+    value: none #同行者4 性別
+
+  user_age_5:
+    type: text
+    x: 93
+    y: 255
+    value: #同行者4 年齢
+
+  user_alphabet_5:
+    type: text
+    x: 103
+    y: 255
+    value: #同行者4 パスポート記載のローマ字(姓名) ※海外旅行のみ
+
+  user_birthday_5:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 175
+        y: 255
+      -
+        x: 187
+        y: 255
+      -
+        x: 193
+        y: 255
+    value: #同行者4 生年月日(y-m-d) ※海外旅行のみ
+#----------------------------------------
+#同行者5(オプション)
+  user_name_6:
+    type: text
+    x: 20
+    y: 263
+    value: #同行者5 氏名(カタカナ)
+
+  user_gender_6:
+    type: select
+    list:
+      none:
+        x:
+        y:
+        width:
+        height:
+      male:
+        x: 82
+        y: 261
+        width: 4
+        height: 4
+      female:
+        x: 86
+        y: 261
+        width: 4
+        height: 4
+    value: none #同行者5 性別
+
+  user_age_6:
+    type: text
+    x: 93
+    y: 263
+    value: #同行者5 年齢
+
+  user_alphabet_6:
+    type: text
+    x: 103
+    y: 263
+    value: #同行者5 パスポート記載のローマ字(姓名) ※海外旅行のみ
+
+  user_birthday_6:
+    type: text_separated_hyphen
+    positions:
+      -
+        x: 175
+        y: 263
+      -
+        x: 187
+        y: 263
+      -
+        x: 193
+        y: 263
+    value: #同行者5 生年月日(y-m-d) ※海外旅行のみ
+
 
 export_filename: travelpack_reserve.pdf
 pdf_url: http://www.jc-tourist.co.jp/travel/itspack/skycontents/2013info/201106_tehaisho.pdf
